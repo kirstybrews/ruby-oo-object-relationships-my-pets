@@ -6,9 +6,9 @@ class Owner
 
   @@all = []
 
-  def initialize(name, species = "human")
+  def initialize(name)
     @name = name
-    @species = species
+    @species = "human"
     @@all << self
   end
 
@@ -66,6 +66,7 @@ class Owner
 
   def sell_pets
     dogs.map do | dog |
+      #binding.pry
       dog.mood = "nervous"
       dog.owner = nil
     end
@@ -81,6 +82,5 @@ class Owner
 
 end
 
-#kirsty = Owner.new("Kirsty")
 #binding.pry
 0

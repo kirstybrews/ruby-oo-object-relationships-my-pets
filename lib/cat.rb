@@ -5,10 +5,10 @@ class Cat
 
   @@all = []
 
-  def initialize(name, owner, mood = "nervous")
+  def initialize(name, owner)
     @name = name
     @owner = owner
-    @mood = mood
+    @mood = "nervous"
     @@all << self
   end
 
@@ -17,6 +17,5 @@ class Cat
   end
 
 end
-
 #binding.pry
 0
